@@ -3,25 +3,25 @@
 I explored a Pet Salon database named dog_salon with a transactions table that is a snapshot of some of the transactions that occurred in the week of 6/16/19 to 6/22/19. 
 
 Fields include the following:
-<br>transaction_id (integer)
-<br>date (date)
-<br>pet_id (integer)
-<br>service (string)
+    <br>transaction_id (integer)
+    <br>date (date)
+    <br>pet_id (integer)
+    <br>service (string)
 
 The owners table includes the following fields:
-<br>owner_id (integer)
-<br>pet_id (integer)
-<br>size (string), size of pet
+    <br>owner_id (integer)
+    <br>pet_id (integer)
+    <br>size (string), size of pet
 
 The owners_2 table lists additional owners including some of the same owners who appear in owners who may own more than one dog. 
-<br>Fields include the following:
-<br>owner_id (integer)
-<br>pet_id (integer)
-<br>size (string), size of pet
+    <br>Fields include the following:
+    <br>owner_id (integer)
+    <br>pet_id (integer)
+    <br>size (string), size of pet
 
 The visits table includes the following fields:
-<br>pet_id (integer)
-<br>visits_count (integer)
+    <br>pet_id (integer)
+    <br>visits_count (integer)
 
 ## #1
 Write a query that returns the owner_id of the owners table and the transaction_id and service of the transactions table.
@@ -71,20 +71,20 @@ Return only the rows where the number of visits is greater than or equal to 3. S
 Use the CONCAT() function for this operation instead of the concat operator (||), as they behave differently when working with NULL values.
 You may notice that the same pet is owned by two different owners. Although uncommon, this is not necessarily an error.
 
-<img width="539" alt="7" src="https://github.com/romaoeh/PetSalon/assets/131217181/4a28b0f6-c05a-48e2-a519-7c3ea296b650">
-<img width="539" alt="7 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/76cc03c6-7245-49ce-98ff-4d77889d9dd9">
+<br><img width="539" alt="7" src="https://github.com/romaoeh/PetSalon/assets/131217181/4a28b0f6-c05a-48e2-a519-7c3ea296b650">
+<br><img width="539" alt="7 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/76cc03c6-7245-49ce-98ff-4d77889d9dd9">
 
 ## #8
 Show the visit counts for each pet, and order the output from most to least visits. Include the owner_id, pet_id, and visits_count columns in your output.
 
-<img width="502" alt="8" src="https://github.com/romaoeh/PetSalon/assets/131217181/e4d07851-2463-46c1-ba6d-59f373121d17">
-<img width="502" alt="8 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/7bd0f812-f499-443d-8197-e816afcac653">
+<br><img width="502" alt="8" src="https://github.com/romaoeh/PetSalon/assets/131217181/e4d07851-2463-46c1-ba6d-59f373121d17">
+<br><img width="502" alt="8 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/7bd0f812-f499-443d-8197-e816afcac653">
 
 ## #9
 Write a query that returns the owner_id, pet_id, date, and service for transactions that happened on June 17th, 2019, or for transactions where the service provided was a haircut. Order your results by date.
 
-<img width="499" alt="9" src="https://github.com/romaoeh/PetSalon/assets/131217181/8a65d6bd-c0a4-496a-9da6-ec0c2ae1133c">
-<img width="499" alt="9 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/bf0cd087-61d8-4140-b948-9b6b27e6bcc4">
+<br><img width="499" alt="9" src="https://github.com/romaoeh/PetSalon/assets/131217181/8a65d6bd-c0a4-496a-9da6-ec0c2ae1133c">
+<br><img width="499" alt="9 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/bf0cd087-61d8-4140-b948-9b6b27e6bcc4">
 
 ## #10
 You have a promotion where you'd like to give a gift to those pets who have had their nails done at the salon.
@@ -92,7 +92,6 @@ Write a query that shows the pet_id and service for those pets that used the nai
 
 Use a CASEstatement that assigns gift when the service is nails, and otherwise assigns no gift. End your CASE statement with the alias get_gift, and order by this field.
 
-<img width="502" alt="10" src="https://github.com/romaoeh/PetSalon/assets/131217181/d8010d0d-a9b9-43a9-b35c-0f68769f8ebd">
-<img width="502" alt="10 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/5275cc33-2385-48f5-9692-18e3f54c22b4">
-
+<br><img width="502" alt="10" src="https://github.com/romaoeh/PetSalon/assets/131217181/d8010d0d-a9b9-43a9-b35c-0f68769f8ebd">
+<br><img width="502" alt="10 5" src="https://github.com/romaoeh/PetSalon/assets/131217181/5275cc33-2385-48f5-9692-18e3f54c22b4">
 
